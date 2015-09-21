@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:capitalize="characters"
+        android:text="Who represents You in the U.S. Congress"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/nameParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/mainTitle"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:capitalize="characters"
+            android:paddingRight="10dp"
+            android:text="name name"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/party"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/name"
+            android:capitalize="characters"
+            android:paddingRight="10dp"
+            android:text="party"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/nameParty"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/image1">
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="state"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:layout_marginTop="10dp"
+            android:capitalize="characters"
+            android:text="phone"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="10dp"
+            android:capitalize="characters"
+            android:text="office"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/office"
+            android:layout_marginTop="10dp"
+            android:capitalize="characters"
+            android:text="link"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
